@@ -109,6 +109,8 @@ footer {
 	color: #666;
 	text-align: center;
 }
+
+
 h2 {
 	font-size: 34px;
 	color: #fff;
@@ -126,29 +128,26 @@ p {
 	line-height: 1.6;
 	margin: 0 0 1em 0;
 }
+
 @media screen and (max-width: 767px) {
-
-img {
-max-width: 100%;
-height: auto;
-display: block;
-}
-
-#outer {
-	width: 100%;
-}
-#inner {
-	padding: 10px;
+	.main-side-wrap {
 	display: flex;
-    flex-direction: column-reverse; /* ← これで順番を逆に！ */
-}
+	flex-direction: column-reverse;
+	}
 
-#main, aside {
-	float: none;
+	#main, .side {
 	width: 100%;
+	float: none;
 	padding-right: 0;
 	border-right: none;
-}
+	}
+
+	#inner {
+	padding: 10px;
+	display: block; /* ← flex解除しておく */
+	}
+
+
 h1 {
 	font-size: 18px;
 }
@@ -161,4 +160,14 @@ h3 {
 h4 {
 	font-size: 1em;
 }
-}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	}
+}	
+
+
+
