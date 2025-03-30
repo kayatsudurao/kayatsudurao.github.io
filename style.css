@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+body {
+font-family: "Noto Sans JP",sans-serif; /* 日本語でも読みやすくて無難 */
+font-size: 15px;                         /* 小さすぎ防止 */
+line-height: 1.4;                        /* 行間ゆったりに */
+background-color: #cfc9d1;
+color:#414141;                             /* 本文文字色ちょい濃く */
+margin:0;
+padding:0;
+}
+
+p {
+line-height: 1.5;
+margin-bottom: 1.2em;
+}
+
+h1, h2, h3, h4 {
+font-family: "Noto Sans JP", sans-serif;
+font-weight: 800;
+}
+
+
+#outer {
+	margin: 0 auto;
+	width: 980px;
+	background-color: #f7f7f7;
+	
+}
+#inner {
+	padding:0px;
+}
+header {
+	padding: 0px;
+	height: 70px;
+}
+h1 {
+	font-size: 50px;
+	color: #414141;
+    margin: 10px 0;  /* 上下の余白をコンパクトに */
+    padding: 0;
+}
+h1 a {
+	color: #414141;
+	text-decoration: none;
+}
+
+h1 a:hover {
+	color: #a26fc4;
+	text-decoration: underline;
+}
+
+
+#main {
+	float: left;
+	width: 70%;
+    padding: 0 2em 0 10pt; /* 左側に10pt余白追加、右はそのまま2em */
+	border-right: 1px solid #1f1c22;
+}
+
+a {
+    color: #352049;
+    text-decoration: none; /* 必要なら残す、消したければ none */
+}
+a:hover {
+    color: #666; /* やさしめのグレーとか */
+} 
+
+aside {
+	float: right;
+	width: 24%;
+}
+.side-title {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #282828;
+}
+
+.side ul li a {
+font-family: "Noto Sans JP", sans-serif; /* 読みやすくて洗練されたゴシック */
+font-weight: 600;                        /* 少し太め（bold未満） */
+font-size: 16px;                         /* 小さすぎると読みにくいから少しUP */
+text-decoration: none;                   /* 下線いらない場合はこれでOK */
+color: #222;                             /* 少し濃い目で視認性アップ */
+padding: 6px 0;
+}
+
+.side ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.side ul li a:hover {
+    color: #848484; /* グレー色 */
+}
+
+
+
+footer {
+	clear: both;
+	margin: 2em;
+	font-size: 0.8em;
+	color: #666;
+	text-align: center;
+}
+h2 {
+	font-size: 34px;
+	color: #fff;
+	margin: 0 0 30px 0;
+	padding: 10px 0 10px 20px;
+	background-color: #ffffff;
+}
+h3 {
+	font-size: 2.4em;
+}
+h4 {
+	font-size: 1.4em;
+}
+p {
+	line-height: 1.6;
+	margin: 0 0 1em 0;
+}
+@media screen and (max-width: 767px) {
+#outer {
+	width: 100%;
+}
+#inner {
+	padding: 10px;
+}
+#main, aside {
+	float: none;
+	width: 100%;
+	padding-right: 0;
+	border-right: none;
+}
+h1 {
+	font-size: 18px;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.2em;
+}
+h4 {
+	font-size: 1em;
+}
+}
