@@ -20,6 +20,12 @@ font-family: "Noto Sans JP", sans-serif;
 font-weight: 800;
 }
 
+.responsive-img {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
 
 #outer {
 	margin: 0 auto;
@@ -121,6 +127,13 @@ p {
 	margin: 0 0 1em 0;
 }
 @media screen and (max-width: 767px) {
+
+img {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
 #outer {
 	width: 100%;
 }
