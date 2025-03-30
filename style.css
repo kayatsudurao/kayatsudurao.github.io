@@ -139,7 +139,10 @@ display: block;
 }
 #inner {
 	padding: 10px;
+	display: flex;
+    flex-direction: column-reverse; /* ← これで順番を逆に！ */
 }
+
 #main, aside {
 	float: none;
 	width: 100%;
